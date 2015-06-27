@@ -48,6 +48,7 @@ var NavBarContainer = React.createClass({
           backButtonComponent={this.props.backButtonComponent}
           rightCorner={this.props.rightCorner}
           titleStyle={this.props.titleStyle}
+          navigator={this.props.navigator}
           willDisappear="true" 
         />
         <NavBarContent 
@@ -58,6 +59,7 @@ var NavBarContainer = React.createClass({
           goBack={this.goBack}
           goForward={this.goForward}
           customAction={this.customAction}
+          navigator={this.props.navigator}
         />
       </View>
     )
